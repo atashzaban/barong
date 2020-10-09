@@ -1,4 +1,10 @@
 GIT
+  remote: https://github.com/openware/ruby-jwt
+  revision: 5b146ee5d3d9266455a21e49e82febc1ab0d51b8
+  specs:
+    jwt (2.3.0.dev)
+
+GIT
   remote: https://github.com/rubykube/vault-rails
   revision: b5e6570d1268fe0153b72200bbc58c5254d6c848
   specs:
@@ -230,7 +236,6 @@ GEM
       ruby-vips (>= 2.0.17, < 3)
     ipaddress (0.8.3)
     json (2.3.1)
-    jwt (2.2.1)
     jwt-multisig (1.0.4)
       activesupport (>= 4.0)
       jwt (~> 2.2)
@@ -467,7 +472,7 @@ DEPENDENCIES
   grape_logging (~> 1.8)
   grape_on_rails_routes (~> 0.3.2)
   hiredis (~> 0.6.1)
-  jwt (~> 2.2)
+  jwt!
   jwt-multisig (~> 1.0, >= 1.0.4)
   kaminari (>= 1.2.1)
   kycaid
