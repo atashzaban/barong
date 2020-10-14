@@ -9,7 +9,7 @@ class Postmaster < ApplicationMailer
     @user    = params[:user]
 
     sender = "#{Barong::App.config.sender_name} <#{Barong::App.config.sender_email}>"
-
+    attachments.inline['logo.png'] = File.read('./public/logo.png')
     email_options = {
       subject: params[:subject],
       template_name: params[:template_name],
